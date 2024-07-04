@@ -112,7 +112,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -130,6 +130,124 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">虚拟机SSH连接问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-07-05 00:01:59 / Modified: 00:02:32" itemprop="dateCreated datePublished" datetime="2024-07-05T00:01:59+08:00">2024-07-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>今天想用 vscode 连接虚拟机，结果怎么都连接不上去。使用<code>ifconfig</code>查询 ip 地址时发现只有本机 ip 地址。经过查询相应资料，解决方法如下。</p>
+</blockquote>
+<ul>
+<li>如果你已经配置 NetworkManager 服务以及其开机自启动，请直接从第 6 步开始。</li>
+</ul>
+<ol>
+<li><strong>检查 NetworkManager 服务状态：</strong><br>打开终端并执行以下命令来检查 NetworkManager 服务的状态：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager</span><br></pre></td></tr></table></figure>
+
+<p>​ 这将显示 NetworkManager 服务的当前状态。</p>
+<ol start="2">
+<li><strong>启动 NetworkManager 服务：</strong><br>如果服务没有运行，你可以使用以下命令来启动它：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start NetworkManager</span><br></pre></td></tr></table></figure>
+
+<p>​ 这将启动 NetworkManager 服务。</p>
+<ol start="3">
+<li><strong>设置 NetworkManager 服务开机自启：</strong><br>如果你希望 NetworkManager 在系统启动时自动运行，可以使用以下命令来启用它：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable NetworkManager</span><br></pre></td></tr></table></figure>
+
+<p>​ 这将确保 NetworkManager 在每次启动时自动运行。</p>
+<ol start="4">
+<li><strong>重新检查服务状态：</strong><br>再次检查服务状态，确保 NetworkManager 现在正在运行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager</span><br></pre></td></tr></table></figure>
+
+<p>​ 如果服务已经启动，你应该会看到它的状态显示为“active (running)”。</p>
+<ol start="5">
+<li><strong>重启系统（如果需要）：</strong><br>在某些情况下，重启系统可能有助于解决服务启动问题：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>​ 如果在尝试启动 NetworkManager 服务时遇到问题，你可以检查日志文件以获取可能的错误信息。使用 以下命令来检查 NetworkManager 的日志：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">journalctl -u NetworkManager</span><br></pre></td></tr></table></figure>
+
+<p>​ 这将显示 NetworkManager 服务的日志，你可以在这里查找任何启动错误或其他问题的线索。</p>
+<p>​ 确保你有足够的权限来执行这些命令，如果你没有 root 权限，你可能需要在命令前加上 sudo 来获取必要 的权限。</p>
+<ol start="6">
+<li><strong>重新配置 ip 地址：</strong></li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dhclient -v</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可能是网卡未加托管</span></span><br><span class="line">nmcli n</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">如果是enabled 说明已经被托管；如果是disabled，说明网卡未托管</span></span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li><strong>重新把网卡托管打开：</strong></li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nmcli n on</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将网卡托管打开</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

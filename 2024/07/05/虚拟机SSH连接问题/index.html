@@ -19,27 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="今天想用 vscode 连接虚拟机，结果怎么都连接不上去。使用ifconfig查询 ip 地址时发现只有本机 ip 地址。经过查询相应资料，解决方法如下。   如果你已经配置 NetworkManager 服务以及其开机自启动，请直接从第 6 步开始。   检查 NetworkManager 服务状态：打开终端并执行以下命令来检查 NetworkManager 服务的状态：  1systemct">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2024/06/29/hello-world/index.html">
+<meta property="og:title" content="虚拟机SSH连接问题">
+<meta property="og:url" content="http://example.com/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="今天想用 vscode 连接虚拟机，结果怎么都连接不上去。使用ifconfig查询 ip 地址时发现只有本机 ip 地址。经过查询相应资料，解决方法如下。   如果你已经配置 NetworkManager 服务以及其开机自启动，请直接从第 6 步开始。   检查 NetworkManager 服务状态：打开终端并执行以下命令来检查 NetworkManager 服务的状态：  1systemct">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-06-29T03:36:40.912Z">
-<meta property="article:modified_time" content="2024-06-29T03:36:40.912Z">
+<meta property="article:published_time" content="2024-07-04T16:01:59.000Z">
+<meta property="article:modified_time" content="2024-07-04T16:02:32.901Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2024/06/29/hello-world/">
+<link rel="canonical" href="http://example.com/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/06/29/hello-world/","path":"2024/06/29/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/","path":"2024/07/05/虚拟机SSH连接问题/","title":"虚拟机SSH连接问题"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | Hexo</title>
+<title>虚拟机SSH连接问题 | Hexo</title>
   
 
 
@@ -91,7 +91,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -104,7 +104,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -145,7 +144,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/29/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -158,12 +157,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello World | Hexo">
+      <meta itemprop="name" content="虚拟机SSH连接问题 | Hexo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          虚拟机SSH连接问题
         </h1>
 
         <div class="post-meta-container">
@@ -173,8 +172,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2024-06-29 11:36:40" itemprop="dateCreated datePublished" datetime="2024-06-29T11:36:40+08:00">2024-06-29</time>
+      <time title="Created: 2024-07-05 00:01:59 / Modified: 00:02:32" itemprop="dateCreated datePublished" datetime="2024-07-05T00:01:59+08:00">2024-07-05</time>
     </span>
 
   
@@ -186,19 +186,55 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><blockquote>
+<p>今天想用 vscode 连接虚拟机，结果怎么都连接不上去。使用<code>ifconfig</code>查询 ip 地址时发现只有本机 ip 地址。经过查询相应资料，解决方法如下。</p>
+</blockquote>
+<ul>
+<li>如果你已经配置 NetworkManager 服务以及其开机自启动，请直接从第 6 步开始。</li>
+</ul>
+<ol>
+<li><strong>检查 NetworkManager 服务状态：</strong><br>打开终端并执行以下命令来检查 NetworkManager 服务的状态：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>​ 这将显示 NetworkManager 服务的当前状态。</p>
+<ol start="2">
+<li><strong>启动 NetworkManager 服务：</strong><br>如果服务没有运行，你可以使用以下命令来启动它：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start NetworkManager</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>​ 这将启动 NetworkManager 服务。</p>
+<ol start="3">
+<li><strong>设置 NetworkManager 服务开机自启：</strong><br>如果你希望 NetworkManager 在系统启动时自动运行，可以使用以下命令来启用它：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable NetworkManager</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>​ 这将确保 NetworkManager 在每次启动时自动运行。</p>
+<ol start="4">
+<li><strong>重新检查服务状态：</strong><br>再次检查服务状态，确保 NetworkManager 现在正在运行：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>​ 如果服务已经启动，你应该会看到它的状态显示为“active (running)”。</p>
+<ol start="5">
+<li><strong>重启系统（如果需要）：</strong><br>在某些情况下，重启系统可能有助于解决服务启动问题：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>​ 如果在尝试启动 NetworkManager 服务时遇到问题，你可以检查日志文件以获取可能的错误信息。使用 以下命令来检查 NetworkManager 的日志：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">journalctl -u NetworkManager</span><br></pre></td></tr></table></figure>
+
+<p>​ 这将显示 NetworkManager 服务的日志，你可以在这里查找任何启动错误或其他问题的线索。</p>
+<p>​ 确保你有足够的权限来执行这些命令，如果你没有 root 权限，你可能需要在命令前加上 sudo 来获取必要 的权限。</p>
+<ol start="6">
+<li><strong>重新配置 ip 地址：</strong></li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dhclient -v</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可能是网卡未加托管</span></span><br><span class="line">nmcli n</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">如果是enabled 说明已经被托管；如果是disabled，说明网卡未托管</span></span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li><strong>重新把网卡托管打开：</strong></li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nmcli n on</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将网卡托管打开</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -212,11 +248,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2024/06/29/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="第一篇博客">
+                  <i class="fa fa-angle-left"></i> 第一篇博客
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/06/29/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="next" title="第一篇博客">
-                  第一篇博客 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
