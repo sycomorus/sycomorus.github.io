@@ -77,5 +77,11 @@
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nmcli n on</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将网卡托管打开</span></span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>-Linux技巧</category>
+      </categories>
+      <tags>
+        <tag>-其他</tag>
+      </tags>
   </entry>
 </search>
