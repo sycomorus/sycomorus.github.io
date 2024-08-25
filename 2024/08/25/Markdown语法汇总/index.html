@@ -19,26 +19,88 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="北航计算机大二在读">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BrightStone的博客">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="由于我懒得总结，以下文本直接转载自知乎。链接：https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;674875414  一、生成一、二、三、四、五、六级标题生成一级标题就输入一个“#”，然后按下空格键（生成二级标题就输入两个“#”，以此类推）。例： 123456# 我是中国人       一级标题## 我是中国人      二级标题### 我是中国人     三级标题#### 我是中国人">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法汇总">
+<meta property="og:url" content="http://example.com/2024/08/25/Markdown%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/index.html">
 <meta property="og:site_name" content="BrightStone的博客">
-<meta property="og:description" content="北航计算机大二在读">
+<meta property="og:description" content="由于我懒得总结，以下文本直接转载自知乎。链接：https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;674875414  一、生成一、二、三、四、五、六级标题生成一级标题就输入一个“#”，然后按下空格键（生成二级标题就输入两个“#”，以此类推）。例： 123456# 我是中国人       一级标题## 我是中国人      二级标题### 我是中国人     三级标题#### 我是中国人">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-80a6e4d12420ce8af316a7c4e96341cf_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-c267193fcd36c0c16ff9527f1b270c70_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-8f9d403091fdb9c0be74428fe8923db8_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-776b6d07f2ec248bb91e81e6227e0135_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-5619afc4dc7da849d7f11c05b180e87a_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-ace21411b498c8e3a1fdf597e95dd4eb_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-01d82bd353f481129803a9ed8ebc54be_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-e472275bc46dc0cab0d825996b07bb0a_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-9022c96ca2339b08bca37a67b66ec87b_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-253cc391910e26f0f2b7031260b1447f_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-2b12ec94b46911eab6c9b2d0b85c76c4_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-72b67fa81af2868db3449543c89ac3e1_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-439a6fa9422479ba02888c1337a792dd_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-2d2e0903689dfc4394d5f711949adec1_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-c9bdaee46c4960ab54e17047e1092862_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-6f3d8f1172742c802bfda6a036b07f2b_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-170bfdcd4f45224e45195a14daf5f6e6_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-0acaaceee7beb6d74d22ed8f07527732_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-71f349c8b4253de1a8dd1f534b6f35fa_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-a071bee24f9853d25f2cbbc6c8838284_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-43964d985e2c1d8628a9fb73eeed2e19_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-8a2f5a5c8d5990a1371b90aecdc61eb6_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-e5a7863ae7bbd52fecd379fabfa57312_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-949485cf542d759da9e803706debed0f_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-3906a4187293ab0c07b7eae04a4b3567_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-19e0c56220bce99e7072da2f01759f56_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-36ef3b93553bed571defe7ad50fc4003_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-6d8a9ee45796b1bce56ec11b1331dba0_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-c9dcaa84f8ba299d318f5536a9815009_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-a8b9e5b4490c1fa601c9539a15c4d986_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-a4896ebf60586bc33b72151270e885e6_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-3e855a14e82237e6ef9dea2a8c021f6b_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-8be72474dc0c5d014da090df84ae5940_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-a18d7a138151c27ff53e8e17df283f83_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-297ed3e85da6983a258d0a8cc882d5a8_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-d14b394d61c8b504d889f8c32244fbe3_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-88ac24de65aeb1cd1aa7c9e01f548c1e_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-502811a6f737119cbeaaf51703e201f3_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-218ab6b9dd19e7d14c11570b88d0ff1d_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-b9fe41fe863e1a1dcda9ed097a8f8375_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-46323b0bed5ac2b50483baecc0f4f928_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-48f76b074b55d89cef3e2acdfa49c307_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-5848d10c21476819c6ce84ba62868d29_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-4ba5b166de893365c20fcb29edf9e6f7_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-b1c9ed28d49e1ca66d79624cb84b7568_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-132b73e28f95c3ba744c67ccc8ac3db7_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-53b8a022d3210b2df76c1c077e7c1af4_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-2a6196323944b319a24d6b748dd48984_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-765eefd66e68c41971cc77eb4e6d7b5d_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-1dbb161c2f95744710abc8b0e2197b93_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-7c3c163670739c2c6bfafe2715bcdbef_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-22daea70e968156dd91d9a85c3e1bd32_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-950e96c1dde80e996420a624d9becabe_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-4f1aec243e68f48a30d746f11c46d678_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-0912ec041f9d8240875284f02b853d3f_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-d3e435e5dd8d50a5a072848b02d19927_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-5b679a9ed4b7c71b0efbceadd4a06161_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-78a32f3951cdfc136b503f81911d5794_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-8302378fed452bfaeca8fc121c296126_b.jpg">
+<meta property="article:published_time" content="2024-08-25T02:59:10.000Z">
+<meta property="article:modified_time" content="2024-08-25T03:03:54.100Z">
 <meta property="article:author" content="BrightStone">
-<meta property="article:tag" content="学习记录，番剧感想">
+<meta property="article:tag" content="-其他">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic4.zhimg.com/v2-80a6e4d12420ce8af316a7c4e96341cf_b.jpg">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/08/25/Markdown%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/08/25/Markdown%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/","path":"2024/08/25/Markdown语法汇总/","title":"Markdown语法汇总"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>BrightStone的博客</title>
+<title>Markdown语法汇总 | BrightStone的博客</title>
   
 
 
@@ -68,7 +130,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">BrightStone的博客</h1>
+      <p class="site-title">BrightStone的博客</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -90,7 +152,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -103,6 +165,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%94%9F%E6%88%90%E4%B8%80%E3%80%81%E4%BA%8C%E3%80%81%E4%B8%89%E3%80%81%E5%9B%9B%E3%80%81%E4%BA%94%E3%80%81%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">一、生成一、二、三、四、五、六级标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%88%86%E5%89%B2%E7%BA%BF%EF%BC%88Horizonal-Rule%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">二、分割线（Horizonal Rule）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%96%9C%E4%BD%93%E3%80%81%E5%8A%A0%E7%B2%97%EF%BC%9B%E5%88%A0%E9%99%A4%E7%BA%BF%EF%BC%88Strikethrough%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">三、斜体、加粗；删除线（Strikethrough）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%BC%95%E7%94%A8%EF%BC%88Blockquotes%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">四、引用（Blockquotes）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%EF%BC%88Unordered-Lists%EF%BC%89%E3%80%81%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%EF%BC%88Ordered-Lists%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">五、无序列表（Unordered Lists）、有序列表（Ordered Lists）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5%EF%BC%88Autolinks%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">六、自动链接（Autolinks）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E6%8F%92%E5%85%A5%E5%B8%A6%E6%A0%87%E9%A2%98%E7%9A%84%E7%BD%91%E5%9D%80%EF%BC%88Link-titles%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">七、插入带标题的网址（Link titles）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB%E3%80%81Todo-List%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%E5%88%97%E8%A1%A8%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">八、Todo List（待办事项列表）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E3%80%81%E5%88%9B%E5%BB%BA%E8%A1%A8%E6%A0%BC"><span class="nav-number">9.</span> <span class="nav-text">九、创建表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E9%BB%98%E8%AE%A4%E5%B1%85%E5%B7%A6%EF%BC%9A%E5%9C%A8%E6%AF%8F%E4%B8%AA%E5%8D%95%E5%85%83%E6%A0%BC%E4%B9%8B%E9%97%B4%E6%B7%BB%E5%8A%A0-%E4%BD%9C%E4%B8%BA%E7%BA%B5%E5%90%91%E5%88%86%E9%9A%94%E7%AC%A6%EF%BC%8C%E5%9C%A8%E9%A1%B5%E7%9C%89%E4%B8%8B%E6%96%B9%E6%B7%BB%E5%8A%A0%E4%B8%80%E8%A1%8C%E7%9F%AD%E5%88%92%E7%BA%BF-%E5%88%86%E9%9A%94%E7%AC%A6%E8%A1%8C%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%AA%E5%8D%95%E5%85%83%E6%A0%BC%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E4%B8%89%E4%B8%AA%E6%88%96%E5%A4%9A%E4%B8%AA%E7%9F%AD%E5%88%92%E7%BA%BF%EF%BC%8C-%E4%B8%8D%E9%9C%80%E8%A6%81%E5%9E%82%E7%9B%B4%E5%AF%B9%E9%BD%90"><span class="nav-number">9.1.</span> <span class="nav-text">（一）默认居左：在每个单元格之间添加|作为纵向分隔符，在页眉下方添加一行短划线, 分隔符行中的每个单元格必须使用三个或多个短划线，|不需要垂直对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89Center-text-in-a-column%EF%BC%88%E5%88%97%E8%A1%A8%E5%B1%85%E4%B8%AD%EF%BC%89"><span class="nav-number">9.2.</span> <span class="nav-text">（二）Center text in a column（列表居中）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89Right-align-the-text-in-a-column%EF%BC%88%E5%88%97%E8%A1%A8%E5%B1%85%E5%8F%B3%EF%BC%89"><span class="nav-number">9.3.</span> <span class="nav-text">（三）Right-align the text in a column（列表居右）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E3%80%81%E7%81%B0%E8%89%B2%E5%BA%95%E6%A1%86"><span class="nav-number">10.</span> <span class="nav-text">十、灰色底框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E4%B8%8B%E5%88%92%E7%BA%BF%E3%80%81%E5%8A%A0%E9%BB%84%E6%A0%87%E8%AE%B0%E3%80%81%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="nav-number">11.</span> <span class="nav-text">十一、下划线、加黄标记、字体颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81%E5%A4%A7%E7%BA%B2%E5%9B%BE"><span class="nav-number">12.</span> <span class="nav-text">十二、大纲图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%B8%89%E3%80%81%E5%B8%A6%E5%A4%96%E6%A1%86%E7%9A%84%E6%96%87%E6%9C%AC"><span class="nav-number">13.</span> <span class="nav-text">十三、带外框的文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E5%9B%9B%E3%80%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95"><span class="nav-number">14.</span> <span class="nav-text">十四、数学公式语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%BA%94%E3%80%81%E5%AF%B9-markdown-%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A1%A5%E5%85%85"><span class="nav-number">15.</span> <span class="nav-text">十五、对 markdown 公式的一些补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%A7%AF%E5%88%86"><span class="nav-number">15.1.</span> <span class="nav-text">（一）积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%90%91%E9%87%8F%E5%85%AC%E5%BC%8F"><span class="nav-number">15.2.</span> <span class="nav-text">（二）向量公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0"><span class="nav-number">15.3.</span> <span class="nav-text">（三）分段函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E5%81%8F%E5%AF%BC%E6%95%B0"><span class="nav-number">15.4.</span> <span class="nav-text">（四）偏导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7"><span class="nav-number">15.5.</span> <span class="nav-text">（五）常用数学符号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89%E7%9F%A9%E9%98%B5"><span class="nav-number">15.6.</span> <span class="nav-text">（六）矩阵</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E5%85%AD%E3%80%81%E5%AF%B9%E4%BA%8E%E7%A9%BA%E6%A0%BC%E9%97%B4%E8%B7%9D%E8%AF%AD%E6%B3%95%E7%9A%84%E8%A1%A5%E5%85%85"><span class="nav-number">16.</span> <span class="nav-text">十六、对于空格间距语法的补充</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%B8%83%E3%80%81%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F%E3%80%81%E5%A4%A7%E5%B0%8F%E3%80%81%E9%A2%9C%E8%89%B2"><span class="nav-number">17.</span> <span class="nav-text">十七、字体样式、大小、颜色</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -142,16 +205,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/25/Markdown%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -165,13 +229,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | BrightStone的博客">
+      <meta itemprop="name" content="Markdown语法汇总 | BrightStone的博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/25/Markdown%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">Markdown语法汇总</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Markdown语法汇总
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -203,8 +267,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <blockquote>
+    <div class="post-body" itemprop="articleBody"><blockquote>
 <p>由于我懒得总结，以下文本直接转载自知乎。<br>链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/674875414">https://zhuanlan.zhihu.com/p/674875414</a></p>
 </blockquote>
 <h2 id="一、生成一、二、三、四、五、六级标题"><a href="#一、生成一、二、三、四、五、六级标题" class="headerlink" title="一、生成一、二、三、四、五、六级标题"></a>一、生成一、二、三、四、五、六级标题</h2><p><strong>生成<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:%22674875414%22%7D">一级标题</a>就输入一个“#”，然后按下空格键</strong>（生成二级标题就输入两个“#”，以此类推）。例：</p>
@@ -389,7 +452,6 @@
 <p><img src="https://pic3.zhimg.com/v2-8302378fed452bfaeca8fc121c296126_b.jpg" alt="img"></p>
 <p>示例结果 图 46</p>
 
-      
     </div>
 
     
@@ -397,295 +459,25 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/%E5%85%B6%E4%BB%96/" rel="tag"># -其他</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" rel="prev" title="虚拟机SSH连接问题">
+                  <i class="fa fa-angle-left"></i> 虚拟机SSH连接问题
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="BrightStone">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BrightStone的博客">
-      <meta itemprop="description" content="北航计算机大二在读">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | BrightStone的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/05/%E8%99%9A%E6%8B%9F%E6%9C%BASSH%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">虚拟机SSH连接问题</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-05 00:01:59" itemprop="dateCreated datePublished" datetime="2024-07-05T00:01:59+08:00">2024-07-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-20 21:15:00" itemprop="dateModified" datetime="2024-08-20T21:15:00+08:00">2024-08-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Linux%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">-Linux技巧</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <blockquote>
-<p>今天想用 vscode 连接虚拟机，结果怎么都连接不上去。使用<code>ifconfig</code>查询 ip 地址时发现只有本机 ip 地址。经过查询相应资料，解决方法如下。</p>
-</blockquote>
-<ul>
-<li>如果你已经配置 NetworkManager 服务以及其开机自启动，请直接从第 6 步开始。</li>
-</ul>
-<ol>
-<li><strong>检查 NetworkManager 服务状态：</strong><br>打开终端并执行以下命令来检查 NetworkManager 服务的状态：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager</span><br></pre></td></tr></table></figure>
-
-<p>​ 这将显示 NetworkManager 服务的当前状态。</p>
-<ol start="2">
-<li><strong>启动 NetworkManager 服务：</strong><br>如果服务没有运行，你可以使用以下命令来启动它：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start NetworkManager</span><br></pre></td></tr></table></figure>
-
-<p>​ 这将启动 NetworkManager 服务。</p>
-<ol start="3">
-<li><strong>设置 NetworkManager 服务开机自启：</strong><br>如果你希望 NetworkManager 在系统启动时自动运行，可以使用以下命令来启用它：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable NetworkManager</span><br></pre></td></tr></table></figure>
-
-<p>​ 这将确保 NetworkManager 在每次启动时自动运行。</p>
-<ol start="4">
-<li><strong>重新检查服务状态：</strong><br>再次检查服务状态，确保 NetworkManager 现在正在运行：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager</span><br></pre></td></tr></table></figure>
-
-<p>​ 如果服务已经启动，你应该会看到它的状态显示为“active (running)”。</p>
-<ol start="5">
-<li><strong>重启系统（如果需要）：</strong><br>在某些情况下，重启系统可能有助于解决服务启动问题：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<p>​ 如果在尝试启动 NetworkManager 服务时遇到问题，你可以检查日志文件以获取可能的错误信息。使用 以下命令来检查 NetworkManager 的日志：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">journalctl -u NetworkManager</span><br></pre></td></tr></table></figure>
-
-<p>​ 这将显示 NetworkManager 服务的日志，你可以在这里查找任何启动错误或其他问题的线索。</p>
-<p>​ 确保你有足够的权限来执行这些命令，如果你没有 root 权限，你可能需要在命令前加上 sudo 来获取必要 的权限。</p>
-<ol start="6">
-<li><strong>重新配置 ip 地址：</strong></li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dhclient -v</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可能是网卡未加托管</span></span><br><span class="line">nmcli n</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">如果是enabled 说明已经被托管；如果是disabled，说明网卡未托管</span></span><br></pre></td></tr></table></figure>
-
-<ol start="7">
-<li><strong>重新把网卡托管打开：</strong></li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nmcli n on</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将网卡托管打开</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/29/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="BrightStone">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BrightStone的博客">
-      <meta itemprop="description" content="北航计算机大二在读">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | BrightStone的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/29/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">第一篇博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-06-29 11:51:16 / 修改时间：11:51:57" itemprop="dateCreated datePublished" datetime="2024-06-29T11:51:16+08:00">2024-06-29</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h2><p>尝试一下</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/29/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="BrightStone">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BrightStone的博客">
-      <meta itemprop="description" content="北航计算机大二在读">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | BrightStone的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/29/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-29 11:36:40" itemprop="dateCreated datePublished" datetime="2024-06-29T11:36:40+08:00">2024-06-29</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 

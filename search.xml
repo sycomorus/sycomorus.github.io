@@ -84,4 +84,199 @@
         <tag>-其他</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Markdown语法汇总</title>
+    <url>/2024/08/25/Markdown%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<blockquote>
+<p>由于我懒得总结，以下文本直接转载自知乎。<br>链接：<a href="https://zhuanlan.zhihu.com/p/674875414">https://zhuanlan.zhihu.com/p/674875414</a></p>
+</blockquote>
+<h2 id="一、生成一、二、三、四、五、六级标题"><a href="#一、生成一、二、三、四、五、六级标题" class="headerlink" title="一、生成一、二、三、四、五、六级标题"></a>一、生成一、二、三、四、五、六级标题</h2><p><strong>生成<a href="https://www.zhihu.com/search?q=%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:%22674875414%22%7D">一级标题</a>就输入一个“#”，然后按下空格键</strong>（生成二级标题就输入两个“#”，以此类推）。例：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># 我是中国人       一级标题</span><br><span class="line">## 我是中国人      二级标题</span><br><span class="line">### 我是中国人     三级标题</span><br><span class="line">#### 我是中国人    四级标题</span><br><span class="line">##### 我是中国人   五级标题</span><br><span class="line">###### 我是中国人  六级标题</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-80a6e4d12420ce8af316a7c4e96341cf_b.jpg" alt="img"></p>
+<p>示例结果 图 1</p>
+<h2 id="二、分割线（Horizonal-Rule）"><a href="#二、分割线（Horizonal-Rule）" class="headerlink" title="二、分割线（Horizonal Rule）"></a>二、分割线（Horizonal Rule）</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">--- + 回车   或     *** + 回车</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-c267193fcd36c0c16ff9527f1b270c70_b.jpg" alt="img"></p>
+<p>示例结果 图 2</p>
+<h2 id="三、斜体、加粗；删除线（Strikethrough）"><a href="#三、斜体、加粗；删除线（Strikethrough）" class="headerlink" title="三、斜体、加粗；删除线（Strikethrough）"></a>三、斜体、加粗；删除线（Strikethrough）</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">**rendered as bold text**       加粗（快捷键：ctrl + B ）</span><br><span class="line">_rendered as italicized text_   斜体(快捷键：ctrl + I)</span><br><span class="line">~~Strike through this text~~    删除线</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-8f9d403091fdb9c0be74428fe8923db8_b.jpg" alt="img"></p>
+<p>示例结果 图 3</p>
+<p><img src="https://pic2.zhimg.com/v2-776b6d07f2ec248bb91e81e6227e0135_b.jpg" alt="img"></p>
+<p>示例结果 图 4</p>
+<h2 id="四、引用（Blockquotes）"><a href="#四、引用（Blockquotes）" class="headerlink" title="四、引用（Blockquotes）"></a>四、引用（Blockquotes）</h2><p>To create a blockquote, use <code>&gt;</code> before any text you want to quote, and put <code>space</code>.</p>
+<p><img src="https://pic3.zhimg.com/v2-5619afc4dc7da849d7f11c05b180e87a_b.jpg" alt="img"></p>
+<p>示例结果 图 5 单层引用</p>
+<p>Blockquotes can also be nested（多层引用）： <code>&gt;</code> <code>&gt;</code>、 <code>&gt;</code> <code>&gt;</code> <code>&gt;</code></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&gt;一个人的世界是多么了不起，是勇敢，也是成熟       按一下Enter键</span><br><span class="line">&gt;没有人记起，也没有人会忘记      按一下Enter键</span><br><span class="line">&gt;有的是风吹雨打    按一下Enter键</span><br><span class="line">&gt;暴晒雨淋  按一下Enter键</span><br><span class="line">&gt;守住自己</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-ace21411b498c8e3a1fdf597e95dd4eb_b.jpg" alt="img"></p>
+<p>示例结果 图 6 多层引用</p>
+<h2 id="五、无序列表（Unordered-Lists）、有序列表（Ordered-Lists）"><a href="#五、无序列表（Unordered-Lists）、有序列表（Ordered-Lists）" class="headerlink" title="五、无序列表（Unordered Lists）、有序列表（Ordered Lists）"></a>五、无序列表（Unordered Lists）、有序列表（Ordered Lists）</h2><p>You may use any of the following symbols to denote bullets for each list item.</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">+ 我是中国人</span><br><span class="line">- 我是中国人</span><br><span class="line">* 我是中国人</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>我是中国人</li>
+<li>我是中国人</li>
+<li>我是中国人</li>
+</ul>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">+ Lorem ipsum dolor sit amet</span><br><span class="line">+ Consectetur adipiscing elit</span><br><span class="line">+ Integer molestie lorem at massa</span><br><span class="line">+ Facilisis in pretium nisl aliquet</span><br><span class="line">+ Nulla volutpat aliquam velit</span><br><span class="line">  - Phasellus iaculis neque</span><br><span class="line">  - Purus sodales ultricies</span><br><span class="line">  - Vestibulum laoreet porttitor sem</span><br><span class="line">  - Ac tristique libero volutpat at</span><br><span class="line">+ Faucibus porta lacus fringilla vel</span><br><span class="line">+ Aenean sit amet erat nunc</span><br><span class="line">+ Eget porttitor lorem</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/v2-01d82bd353f481129803a9ed8ebc54be_b.jpg" alt="img"></p>
+<p>示例结果 图 7 无序列表</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1. 我是中国人1</span><br><span class="line">2. 我是中国人2</span><br><span class="line">3. 我是中国人3</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>我是中国人 1</li>
+<li>我是中国人 2</li>
+<li>我是中国人 3</li>
+</ol>
+<h2 id="六、自动链接（Autolinks）"><a href="#六、自动链接（Autolinks）" class="headerlink" title="六、自动链接（Autolinks）"></a>六、自动链接（Autolinks）</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;http:// + 具体网址&gt;             例如：&lt;http://www.baidu.com&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/v2-e472275bc46dc0cab0d825996b07bb0a_b.jpg" alt="img"></p>
+<p>示例结果 图 8</p>
+<h2 id="七、插入带标题的网址（Link-titles）"><a href="#七、插入带标题的网址（Link-titles）" class="headerlink" title="七、插入带标题的网址（Link titles）"></a>七、插入带标题的网址（Link titles）</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">[标题]（http:// + 具体网址)      例如： [百度一下](http: // www.baidu.com)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-9022c96ca2339b08bca37a67b66ec87b_b.jpg" alt="img"></p>
+<p>示例结果 图 9</p>
+<h2 id="八、Todo-List（待办事项列表）"><a href="#八、Todo-List（待办事项列表）" class="headerlink" title="八、Todo List（待办事项列表）"></a>八、Todo List（待办事项列表）</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">-  空格 [空格] 空格 人生四大喜</span><br><span class="line">-  空格 [空格] 空格 久旱逢甘露</span><br><span class="line">-  空格 [空格] 空格 他乡遇故知</span><br><span class="line">-  空格 [空格] 空格 洞房花烛夜</span><br><span class="line">-  空格 [空格] 空格 金榜题名时</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-253cc391910e26f0f2b7031260b1447f_b.jpg" alt="img"></p>
+<p><img src="https://pic1.zhimg.com/v2-2b12ec94b46911eab6c9b2d0b85c76c4_b.jpg" alt="img"></p>
+<p>示例结果 图 10</p>
+<h2 id="九、创建表格"><a href="#九、创建表格" class="headerlink" title="九、创建表格"></a>九、创建表格</h2><h3 id="（一）默认居左：在每个单元格之间添加-作为纵向分隔符，在页眉下方添加一行短划线-分隔符行中的每个单元格必须使用三个或多个短划线，-不需要垂直对齐"><a href="#（一）默认居左：在每个单元格之间添加-作为纵向分隔符，在页眉下方添加一行短划线-分隔符行中的每个单元格必须使用三个或多个短划线，-不需要垂直对齐" class="headerlink" title="（一）默认居左：在每个单元格之间添加|作为纵向分隔符，在页眉下方添加一行短划线, 分隔符行中的每个单元格必须使用三个或多个短划线，|不需要垂直对齐"></a>（一）默认居左：在每个单元格之间添加<code>|</code>作为纵向<a href="https://www.zhihu.com/search?q=%E5%88%86%E9%9A%94%E7%AC%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:%22674875414%22%7D">分隔符</a>，在页眉下方添加一行短划线, 分隔符行中的每个单元格必须使用三个或多个短划线，<code>|</code>不需要垂直对齐</h3><p><img src="https://pic2.zhimg.com/v2-72b67fa81af2868db3449543c89ac3e1_b.jpg" alt="img"></p>
+<p>示例结果 图 11</p>
+<h3 id="（二）Center-text-in-a-column（列表居中）"><a href="#（二）Center-text-in-a-column（列表居中）" class="headerlink" title="（二）Center text in a column（列表居中）"></a><strong>（二）Center text in a column（列表居中）</strong></h3><p>若要将文本置于列的中心，请在页眉下的行中的短划线的左右两侧添加冒号<code>：</code></p>
+<p><img src="https://pic2.zhimg.com/v2-439a6fa9422479ba02888c1337a792dd_b.jpg" alt="img"></p>
+<p>示例结果 图 12</p>
+<h3 id="（三）Right-align-the-text-in-a-column（列表居右）"><a href="#（三）Right-align-the-text-in-a-column（列表居右）" class="headerlink" title="（三）Right-align the text in a column（列表居右）"></a>（三）Right-align the text in a column（列表居右）</h3><p>To right-align the text in a column, add a colon to the right of the dashes in the row beneath the header.</p>
+<p><img src="https://pic2.zhimg.com/v2-2d2e0903689dfc4394d5f711949adec1_b.jpg" alt="img"></p>
+<p>示例结果 图 13</p>
+<h2 id="十、灰色底框"><a href="#十、灰色底框" class="headerlink" title="十、灰色底框"></a>十、灰色底框</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1. 单行文本：`文本`</span><br><span class="line">2. 多行文本：```文本```</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/v2-c9bdaee46c4960ab54e17047e1092862_b.jpg" alt="img"></p>
+<p>示例结果 图 14 单行文本</p>
+<p><img src="https://pic4.zhimg.com/v2-6f3d8f1172742c802bfda6a036b07f2b_b.jpg" alt="img"></p>
+<p>示例结果 图 15 多行文本</p>
+<h2 id="十一、下划线、加黄标记、字体颜色"><a href="#十一、下划线、加黄标记、字体颜色" class="headerlink" title="十一、下划线、加黄标记、字体颜色"></a>十一、下划线、加黄标记、字体颜色</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;文本&lt;/u&gt;                        添加下划线</span><br><span class="line">&lt;mark&gt;文本&lt;/mark&gt;                  加黄标记</span><br><span class="line">&lt;font color=red&gt;文本&lt;/font&gt;        字体颜色</span><br><span class="line">&lt;font color=red&gt;**文本**&lt;/font&gt;    字体加粗，字体颜色为红色</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/v2-170bfdcd4f45224e45195a14daf5f6e6_b.jpg" alt="img"></p>
+<p>示例结果 图 16</p>
+<h2 id="十二、大纲图"><a href="#十二、大纲图" class="headerlink" title="十二、大纲图"></a>十二、大纲图</h2><p><img src="https://pic3.zhimg.com/v2-0acaaceee7beb6d74d22ed8f07527732_b.jpg" alt="img"></p>
+<p>源代码</p>
+<p><img src="https://pic3.zhimg.com/v2-71f349c8b4253de1a8dd1f534b6f35fa_b.jpg" alt="img"></p>
+<p>示例结果 图 17</p>
+<h2 id="十三、带外框的文本"><a href="#十三、带外框的文本" class="headerlink" title="十三、带外框的文本"></a>十三、带外框的文本</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$\boxed&#123;文本&#125;$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-a071bee24f9853d25f2cbbc6c8838284_b.jpg" alt="img"></p>
+<p>示例结果 图 18</p>
+<h2 id="十四、数学公式语法"><a href="#十四、数学公式语法" class="headerlink" title="十四、数学公式语法"></a>十四、数学公式语法</h2><p>给数学公式添加颜色：\textcolor{所需颜色}{公式或文本}</p>
+<p><img src="https://pic2.zhimg.com/v2-43964d985e2c1d8628a9fb73eeed2e19_b.jpg" alt="img"></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$增长量：Δ=B-A=A×r=B-\cfrac&#123;B&#125;&#123;1+r&#125;=\cfrac&#123;B×r&#125;&#123;1+r&#125;$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/v2-8a2f5a5c8d5990a1371b90aecdc61eb6_b.jpg" alt="img"></p>
+<p>示例结果 图 19</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$\Rightarrow 年均增长率r=\sqrt[4]&#123;1+R&#125;-1$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/v2-e5a7863ae7bbd52fecd379fabfa57312_b.jpg" alt="img"></p>
+<p>示例结果 图 20</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$\Rightarrow 总增长率R=(1+r)^4-1$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-949485cf542d759da9e803706debed0f_b.jpg" alt="img"></p>
+<p>示例结果 图 21</p>
+<p><img src="https://pic4.zhimg.com/v2-3906a4187293ab0c07b7eae04a4b3567_b.jpg" alt="img"></p>
+<p>注：”&amp;“表示对齐的意思</p>
+<p><img src="https://pic3.zhimg.com/v2-19e0c56220bce99e7072da2f01759f56_b.jpg" alt="img"></p>
+<p>示例结果 图 22</p>
+<p><img src="https://pic4.zhimg.com/v2-36ef3b93553bed571defe7ad50fc4003_b.jpg" alt="img"></p>
+<p>生成矩阵</p>
+<p><img src="https://pic1.zhimg.com/v2-6d8a9ee45796b1bce56ec11b1331dba0_b.jpg" alt="img"></p>
+<p>示例结果 图 23</p>
+<p><img src="https://pic2.zhimg.com/v2-c9dcaa84f8ba299d318f5536a9815009_b.jpg" alt="img"></p>
+<p>注：“l”表示左对齐，“r”表示右对齐</p>
+<p><img src="https://pic3.zhimg.com/v2-a8b9e5b4490c1fa601c9539a15c4d986_b.jpg" alt="img"></p>
+<p>示例结果 图 24</p>
+<p><img src="https://pic3.zhimg.com/v2-a4896ebf60586bc33b72151270e885e6_b.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/v2-3e855a14e82237e6ef9dea2a8c021f6b_b.jpg" alt="img"></p>
+<p>示例结果 图 25</p>
+<p><img src="https://pic1.zhimg.com/v2-8be72474dc0c5d014da090df84ae5940_b.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/v2-a18d7a138151c27ff53e8e17df283f83_b.jpg" alt="img"></p>
+<p>示例结果 图 26</p>
+<p><img src="https://pic1.zhimg.com/v2-297ed3e85da6983a258d0a8cc882d5a8_b.jpg" alt="img"></p>
+<p>示例结果 图 27</p>
+<p><img src="https://pic4.zhimg.com/v2-d14b394d61c8b504d889f8c32244fbe3_b.jpg" alt="img"></p>
+<p>示例结果 图 28</p>
+<p><img src="https://pic3.zhimg.com/v2-88ac24de65aeb1cd1aa7c9e01f548c1e_b.jpg" alt="img"></p>
+<p>示例结果 图 29</p>
+<p><img src="https://pic4.zhimg.com/v2-502811a6f737119cbeaaf51703e201f3_b.jpg" alt="img"></p>
+<p><img src="https://pic2.zhimg.com/v2-218ab6b9dd19e7d14c11570b88d0ff1d_b.jpg" alt="img"></p>
+<p>示例结果 图 30</p>
+<p><img src="https://pic2.zhimg.com/v2-b9fe41fe863e1a1dcda9ed097a8f8375_b.jpg" alt="img"></p>
+<p>示例结果 图 31</p>
+<h2 id="十五、对-markdown-公式的一些补充"><a href="#十五、对-markdown-公式的一些补充" class="headerlink" title="十五、对 markdown 公式的一些补充"></a>十五、对 markdown 公式的一些补充</h2><h3 id="（一）积分"><a href="#（一）积分" class="headerlink" title="（一）积分"></a>（一）积分</h3><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ f(x)=\int_1^\infty x^&#123;n-1&#125;e^&#123;-y&#125;dx\,$     行内公式</span><br><span class="line"></span><br><span class="line">$$ f(x)=\int_1^\infty x^&#123;n-1&#125;e^&#123;-y&#125;dx\,$$   行间公式</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-46323b0bed5ac2b50483baecc0f4f928_b.jpg" alt="img"></p>
+<p>示例结果 图 32 行内和行间公式</p>
+<h3 id="（二）向量公式"><a href="#（二）向量公式" class="headerlink" title="（二）向量公式"></a>（二）向量公式</h3><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$\mathbf&#123;x&#125;=\mathbf&#123;v&#125;_0t + \cfrac&#123;1&#125;&#123;2&#125;\mathbf&#123;a&#125;t^2$$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-48f76b074b55d89cef3e2acdfa49c307_b.jpg" alt="img"></p>
+<p>示例结果 图 33</p>
+<h3 id="（三）分段函数"><a href="#（三）分段函数" class="headerlink" title="（三）分段函数"></a>（三）<a href="https://www.zhihu.com/search?q=%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:%22674875414%22%7D">分段函数</a></h3><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">y = \left \&#123;</span><br><span class="line">\begin&#123;array&#125;&#123;l&#125;             l—左对齐，r—右对齐，c-中心对齐</span><br><span class="line">x+y+z=1\quad&amp;,x\leq 0\\      &amp;在这里表示后面的内容从逗号开始对齐；\quad表示空格</span><br><span class="line">x+2y+3z=9\quad&amp;,y&gt;0 \\</span><br><span class="line">4x+5y+6z=27\quad&amp;,z\geq10,\quad y\neq3</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">\tag&#123;方程组1&#125;</span><br><span class="line">\right.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic2.zhimg.com/v2-5848d10c21476819c6ce84ba62868d29_b.jpg" alt="img"></p>
+<p>示例结果 图 34</p>
+<h3 id="（四）偏导数"><a href="#（四）偏导数" class="headerlink" title="（四）偏导数"></a>（四）<a href="https://www.zhihu.com/search?q=%E5%81%8F%E5%AF%BC%E6%95%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:%22674875414%22%7D">偏导数</a></h3><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">\frac&#123;\partial z&#125;&#123;\partial x&#125;</span><br><span class="line">&amp; = -\sum_&#123;n=0&#125;^a 6x^n \times \frac&#123;\partial&#125;&#123;\partial x&#125;(y^x-x) \\</span><br><span class="line">&amp; = -\frac&#123;1&#125;&#123;a&#125;\prod_&#123;n=0&#125;^a(y^n-log_2a^y \times x^1_2)         \\</span><br><span class="line">&amp; = \mp \ln&#123;(a+b)&#125;^&#123;678&#125;=\ln&#123;a+b&#125; \\</span><br><span class="line">&amp; = \pm \log_3^5x = 2\div3 = 7.8 = 1\cdot 2       \\</span><br><span class="line">&amp; 1 \ll 10000   \simeq 10000.1  \gg 0.5    \\</span><br><span class="line">&amp; 2 \approx 2.00005  \\            &amp; A \cong B  \\</span><br><span class="line">&amp; C \propto D</span><br><span class="line">\end&#123;aligned&#125;</span><br><span class="line">\tag*&#123;chapter 2-1&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-4ba5b166de893365c20fcb29edf9e6f7_b.jpg" alt="img"></p>
+<p>示例结果 图 35</p>
+<h3 id="（五）常用数学符号"><a href="#（五）常用数学符号" class="headerlink" title="（五）常用数学符号"></a>（五）常用数学符号</h3><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$\bar&#123;x&#125;$</span><br><span class="line">$\vec&#123;a&#125;$</span><br><span class="line">$\overrightarrow&#123;AB&#125;$</span><br><span class="line">$\overline&#123;a+b+c+d&#125;$</span><br><span class="line">$\underline&#123;e+f+g+h&#125;$</span><br><span class="line">$\overbrace&#123;1+2+3+4&#125;$</span><br><span class="line">$\underbrace&#123;5+6+7+8&#125;$</span><br><span class="line">$\overbrace&#123;a+\underbrace&#123;b+c&#125;_&#123;2.0&#125;+d&#125;^&#123;3.0&#125;$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-b1c9ed28d49e1ca66d79624cb84b7568_b.jpg" alt="img"></p>
+<p>示例结果 图 36</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$a+b \over c+d$</span><br><span class="line">$2^3$</span><br><span class="line">$4^&#123;3+2&#125;$</span><br><span class="line">$\sin10 + \cos20 + \cot30^\circ + \csc40^\circ + \sec50 +\tan60$</span><br><span class="line">$A \bot C $</span><br><span class="line">$A \parallel B$</span><br><span class="line">$1 \rightarrow 2$</span><br><span class="line">$2 \longrightarrow 3$</span><br><span class="line">$3 \Longrightarrow 4$</span><br><span class="line">$4 \Longleftrightarrow 5$</span><br><span class="line">$5 \rightharpoonup 6$</span><br><span class="line">$7 \rightharpoondown 8$</span><br><span class="line">$9 \rightleftharpoons 10$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic4.zhimg.com/v2-132b73e28f95c3ba744c67ccc8ac3db7_b.jpg" alt="img"></p>
+<p>示例结果 图 37</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$\emptyset$</span><br><span class="line">$\varnothing$</span><br><span class="line">$\in$</span><br><span class="line">$\notin$</span><br><span class="line">$\ni$</span><br><span class="line">$\subseteq$</span><br><span class="line">$\subseteq$</span><br><span class="line">$\subsetneq$</span><br><span class="line">$f(x)\prime $</span><br><span class="line">$\int_0^2x^8dt$</span><br><span class="line">$\iint$</span><br><span class="line">$\iiint$</span><br><span class="line">$\oint$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-53b8a022d3210b2df76c1c077e7c1af4_b.jpg" alt="img"></p>
+<p>示例结果 图 38</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$\because$</span><br><span class="line">$\therefore$</span><br><span class="line">$\exist$</span><br><span class="line">$\vee$</span><br><span class="line">$\wedge$</span><br><span class="line">$\surd$</span><br><span class="line">$\star$</span><br><span class="line">$\ast$</span><br><span class="line">$\Diamond$</span><br><span class="line">$\Alpha \alpha \Beta \beta \Delta \delta \Eta \eta \Gamma \gamma \Kappa \kappa $</span><br><span class="line">$\Lambda \lambda \Theta \theta \Nu \nu \Pi \pi \Sigma \sigma \Phi \phi \varphi $</span><br><span class="line">$\Omega \omega \Upsilon \upsilon \Rho \rho \Xi \xi \Zeta \zeta \Epsilon \epsilon$</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/v2-2a6196323944b319a24d6b748dd48984_b.jpg" alt="img"></p>
+<p>示例结果 图 39</p>
+<h3 id="（六）矩阵"><a href="#（六）矩阵" class="headerlink" title="（六）矩阵"></a>（六）矩阵</h3><p><img src="https://pic2.zhimg.com/v2-765eefd66e68c41971cc77eb4e6d7b5d_b.jpg" alt="img"></p>
+<p>示例结果 图 40</p>
+<p><img src="https://pic4.zhimg.com/v2-1dbb161c2f95744710abc8b0e2197b93_b.jpg" alt="img"></p>
+<p>示例结果 图 41</p>
+<p><img src="https://pic4.zhimg.com/v2-7c3c163670739c2c6bfafe2715bcdbef_b.jpg" alt="img"></p>
+<p>示例结果 图 42</p>
+<p><img src="https://pic3.zhimg.com/v2-22daea70e968156dd91d9a85c3e1bd32_b.jpg" alt="img"></p>
+<p>示例结果 图 43</p>
+<p>就写到这儿吧，希望对需要的人有所帮助。</p>
+<p><strong>——2024 年 1 月 3 日更</strong></p>
+<h2 id="十六、对于空格间距语法的补充"><a href="#十六、对于空格间距语法的补充" class="headerlink" title="十六、对于空格间距语法的补充"></a>十六、对于空格间距语法的补充</h2><p><img src="https://pic3.zhimg.com/v2-950e96c1dde80e996420a624d9becabe_b.jpg" alt="img"></p>
+<p>示例结果 图 44</p>
+<p><strong>——2024 年 1 月 11 日再次补充</strong></p>
+<h2 id="十七、字体样式、大小、颜色"><a href="#十七、字体样式、大小、颜色" class="headerlink" title="十七、字体样式、大小、颜色"></a>十七、字体样式、大小、颜色</h2><p><img src="https://pic1.zhimg.com/v2-4f1aec243e68f48a30d746f11c46d678_b.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/v2-0912ec041f9d8240875284f02b853d3f_b.jpg" alt="img"></p>
+<p>示例结果 图 45</p>
+<p>注：<br />为强制<a href="https://www.zhihu.com/search?q=%E6%8D%A2%E8%A1%8C%E7%AC%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:%22674875414%22%7D">换行符</a>。</p>
+<p><img src="https://pic4.zhimg.com/v2-d3e435e5dd8d50a5a072848b02d19927_b.jpg" alt="img"></p>
+<p>内容截图部分 1</p>
+<p><img src="https://pic2.zhimg.com/v2-5b679a9ed4b7c71b0efbceadd4a06161_b.jpg" alt="img"></p>
+<p>内容截图部分 2</p>
+<p><img src="https://pic1.zhimg.com/v2-78a32f3951cdfc136b503f81911d5794_b.jpg" alt="img"></p>
+<p>内容截图部分图 3</p>
+<p><img src="https://pic3.zhimg.com/v2-8302378fed452bfaeca8fc121c296126_b.jpg" alt="img"></p>
+<p>示例结果 图 46</p>
+]]></content>
+      <categories>
+        <category>-Markdown语法</category>
+      </categories>
+      <tags>
+        <tag>-其他</tag>
+      </tags>
+  </entry>
 </search>
