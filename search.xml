@@ -279,4 +279,22 @@
         <tag>-其他</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Docker教程</title>
+    <url>/2024/10/17/Docker%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>tmux命令总结</title>
+    <url>/2024/12/23/tmux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>原文链接：<a href="https://blog.csdn.net/weixin_44451400/article/details/115539903">tmux命令总结</a></p>
+<p>杀死会话命令：<br><code>tmux kill-session -t dev(kill名为dev的session)</code></p>
+]]></content>
+      <categories>
+        <category>-tmux命令</category>
+      </categories>
+      <tags>
+        <tag>-其他</tag>
+      </tags>
+  </entry>
 </search>
